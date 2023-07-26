@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(./Images/Space2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /*Roboto font*/
+  font-family: "Bagel Fat One", cursive;
+  font-family: "Roboto Condensed", sans-serif;
+}
+/*contains the whole card and places it in the middle of the webpage*/
+#container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/*Styles the card with grid and height and width*/
+.grid {
+  width: 800px;
+  height: 600px;
+  display: grid;
+}
+/*Styles the background image for the chosen planet and the text inside the image*/
+/*Item 1*/
+.planet-img {
+  width: 400px;
+  height: 600px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-image: url(./Images/Space.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+/*Item 2*/
+/*Styles the result menu and its items except the buttons and dropdown menu*/
+.card-result {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #201d1d;
+  color: white;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  font-size: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/*Styles the button inside the result card*/
+.calculate-weight {
+  color: white;
+  background-color: #20519b;
+  font-weight: bold;
+  text-shadow: 0px 3px 3px black;
+  height: 40px;
+  padding: 5px 15px 5px 15px;
+  border-style: none;
+  border-radius: 4px;
+}
+.calculate-weight:hover {
+  background-color: #3582f5;
+}
+.calculate-weight:active {
+  background-color: #143d7a;
+}
+/*Styles the dropdown menu*/
+#select-planets {
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  color: white;
+  background-color: #262729;
+  border-radius: 4px;
+  border-style: none;
+  font-weight: bold;
+  font-size: 17px;
+  /*1px letter spacing to make the text more readable because of the font*/
+  letter-spacing: 1px;
+}
+/*Styles the input field*/
+.calculate-input {
+  width: 200px;
+}
